@@ -1,0 +1,211 @@
+.nutrition {
+  padding: 80px 0;
+  background: var(--white);
+}
+
+.nutrition-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Flavor Tabs */
+.flavor-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.flavor-tab {
+  padding: 1rem 2rem;
+  border: 2px solid var(--flavor-color, var(--primary-color));
+  background: transparent;
+  color: var(--flavor-color, var(--primary-color));
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 1rem;
+  min-width: 150px;
+}
+
+.flavor-tab:hover {
+  background: var(--flavor-color, var(--primary-color));
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(139, 69, 19, 0.2);
+}
+
+.flavor-tab.active {
+  background: var(--flavor-color, var(--primary-color));
+  color: var(--white);
+  box-shadow: 0 8px 25px rgba(139, 69, 19, 0.3);
+}
+
+/* Nutrition Details */
+.nutrition-details {
+  background: var(--background-light);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(139, 69, 19, 0.1);
+}
+
+.calories-info {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.calories-info h3 {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.calories-display {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(139, 69, 19, 0.1);
+  border: 3px solid var(--flavor-color, var(--primary-color));
+  display: inline-block;
+  min-width: 300px;
+}
+
+.calories-number {
+  display: block;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--flavor-color, var(--primary-color));
+  margin-bottom: 0.5rem;
+}
+
+.calories-unit {
+  font-size: 1rem;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.nutrition-table h3 {
+  font-size: 1.3rem;
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.nutrition-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.nutrition-item {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(139, 69, 19, 0.08);
+  transition: var(--transition);
+  border: 2px solid transparent;
+}
+
+.nutrition-item:hover {
+  border-color: var(--flavor-color, var(--primary-color));
+  box-shadow: 0 8px 25px rgba(139, 69, 19, 0.15);
+}
+
+.nutrient-name {
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 1rem;
+}
+
+.nutrient-value {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--flavor-color, var(--primary-color));
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nutrition {
+    padding: 60px 0;
+  }
+  
+  .nutrition-details {
+    padding: 2rem;
+  }
+  
+  .flavor-tabs {
+    gap: 0.5rem;
+  }
+  
+  .flavor-tab {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    min-width: 120px;
+  }
+  
+  .calories-display {
+    min-width: 250px;
+    padding: 1.5rem;
+  }
+  
+  .calories-number {
+    font-size: 2.5rem;
+  }
+  
+  .nutrition-grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+  
+  .nutrition-item {
+    padding: 1rem;
+  }
+  
+  .nutrient-name {
+    font-size: 0.9rem;
+  }
+  
+  .nutrient-value {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nutrition-details {
+    padding: 1.5rem;
+  }
+  
+  .flavor-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .flavor-tab {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .calories-display {
+    min-width: 200px;
+    padding: 1rem;
+  }
+  
+  .calories-number {
+    font-size: 2rem;
+  }
+  
+  .calories-info h3 {
+    font-size: 1.2rem;
+  }
+  
+  .nutrition-table h3 {
+    font-size: 1.1rem;
+  }
+} 

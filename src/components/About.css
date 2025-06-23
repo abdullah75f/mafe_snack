@@ -1,0 +1,61 @@
+.about {
+  padding: 5rem 0;
+  background: var(--white);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.about-text h3 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.about-text h3:first-child {
+  margin-top: 0;
+}
+
+.about-text p {
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.ingredients-list {
+  background: var(--background-light);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+}
+
+.ingredients-list h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.ingredients-list ul {
+  list-style: none;
+}
+
+.ingredients-list li {
+  padding: 0.5rem 0;
+  color: var(--text-light);
+  border-bottom: 1px solid rgba(139, 69, 19, 0.1);
+}
+
+.ingredients-list li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+} 
