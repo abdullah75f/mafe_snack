@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Mafe Snack's",
+  "name": "Mafe Snack's - Ethiopian Traditional Snacks",
+  "description": "Traditional Ethiopian ዳቦ ቆሎ (Dabo Kolo) snacks with authentic flavors",
   "icons": [
     {
       "src": "favicon.ico",
@@ -18,8 +19,11 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#8B4513",
+  "background_color": "#FFF8F0",
+  "orientation": "portrait",
+  "categories": ["food", "business"],
+  "lang": "en"
 }
